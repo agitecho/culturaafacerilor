@@ -1,0 +1,53 @@
+$mobile:400px;
+$tableta:1024px;
+
+
+html{/* background-color: red; !suprapune propietatile body*/ }
+/*head{} !nu se afiseaza nu necesita propietati */
+body{background-color: rgb(245, 4, 173) !important; margin:0; display:block;  align-content: center;/* position:absolute; */}
+header{ 
+    background-color:green; 
+    display: contents;
+     @media screen and (max-width:$mobile) { display: grid; }
+    }
+    .header{background-color: salmon; padding: 20px;}
+    .header-left{
+                background-color: red; 
+                /* float: left; */
+                /* display: inline-block; */
+                /* max-width: max-content; */
+            }
+        .titlu-left{color: white;}
+        .header-img{ width: 250px;}
+    .header-center{
+                /* background-color: yellow; */
+                /* display: inline-block; */
+                }
+        .titlu-center{color: rgba(153, 9, 9, 0.603);}
+    .header-right{
+                 background-color: blue;
+                /* float: right; */
+                /* display:block; */
+                }
+        .titlu-right{color: white;}
+nav{background-color: green; padding: 20px; display: flex;}
+    .navigatiemeniu{background-color: rgb(255, 196, 0);}
+main{background-color: rgb(9, 255, 0); padding: 20px;} 
+    .content{background-color: blue;}
+aside{background-color: yellow; padding: 20px;}
+    .siderbar{background-color:white;}
+    .siderbar-text{background-color: red;}
+section{background-color:aqua; padding: 20px;}
+    .section-flow{background-color: yellow;}
+article{background-color: brown; padding: 20px;}
+    .sectiune-articol{background-color: green;}
+footer{background-color: violet; padding: 20px;} 
+    .footer{background-color: rgb(0, 247, 255);}
+    .footer-left{background-color: red;}
+    .footer-center{background-color: yellow;}
+    .footer-right{background-color: blue;}
+
+/* margin este defint de browser, necesita nominalizare in tag body */
+/* propietatile css daca nu sunt definite intr-un element(copil) acestuia, se impun propietatile elemntului parinte*/
+/* nivele unu si doi in adancime au aplicate background-color.*/
+/* regula de aranjare se aplica pe parinte */
