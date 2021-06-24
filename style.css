@@ -1,5 +1,7 @@
 html {
   /* background-color: red; !suprapune propietatile body*/
+  margin: 0;
+  padding: 0;
 }
 
 /*head{} !nu se afiseaza nu necesita propietati */
@@ -10,6 +12,7 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   /* position:absolute; */
+  font-size: 12px;
 }
 
 header {
@@ -66,13 +69,97 @@ header {
 nav {
   background-color: green;
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 .navigatiemeniu {
   background-color: #ffc400;
+  display: block;
+}
+
+.meniu {
+  list-style-type: none;
+  background-color: magenta;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1.2rem;
+}
+
+.meniu li {
+  padding: 10px;
+  background-color: darkorchid;
+}
+
+.element-meniu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  font-size: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.meniu-copil {
+  list-style-type: none;
+  background-color: cyan;
+  position: absolute;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 2rem 0 0 0;
+}
+
+.meniu-copil li {
+  padding: 20px;
+  background-color: darkorange;
+  display: none;
+}
+
+.dropmenu:hover .meniu-copil li {
+  display: block;
+}
+
+.meniu-copil li:hover {
+  background-color: darkred;
+}
+
+.element-copil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.meniu-copil:hover li.element-copil {
+  display: block;
+  background-color: red;
+}
+
+.meniu-nepot {
+  background-color: #0011ff;
+  padding: 0;
+}
+
+.meniu-nepot li {
+  background-color: yellow;
 }
 
 main {

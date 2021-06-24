@@ -2,9 +2,12 @@ $mobile:400px;
 $tableta:1024px;
 
 
-html{/* background-color: red; !suprapune propietatile body*/ }
+html{/* background-color: red; !suprapune propietatile body*/
+        margin: 0; padding: 0;}
 /*head{} !nu se afiseaza nu necesita propietati */
-body{background-color: rgb(245, 4, 173) !important; margin:0; display:block;  align-content: center;/* position:absolute; */}
+body{background-color: rgb(245, 4, 173) !important; margin:0; display:block;  align-content: center;/* position:absolute; */
+        font-size: 12px;
+    }
 header{ 
     background-color:green; 
     display: contents;
@@ -30,8 +33,21 @@ header{
                 /* display:block; */
                 }
         .titlu-right{color: white;}
-nav{background-color: green; padding: 20px; display: flex;}
-    .navigatiemeniu{background-color: rgb(255, 196, 0);}
+nav{background-color: green; padding: 20px; display: block;}
+    .navigatiemeniu{background-color: rgb(255, 196, 0); display: block;}
+        .meniu{ list-style-type: none; background-color: magenta; display: flex; flex-wrap: wrap; flex-direction: row; font-size: 1.2rem;}
+        .meniu li{ padding: 10px; background-color: darkorchid;}
+        .element-meniu {display: flex; background-color: white; font-size: 1rem; flex-wrap: wrap;}
+            .meniu-copil{list-style-type: none; background-color: cyan; position: absolute; padding: 0; display: flex; flex-direction: row;
+                            margin: 2rem 0 0 0;} 
+            .meniu-copil li{padding: 20px; background-color: darkorange; display: none;}
+            .dropmenu:hover .meniu-copil li{ display: block; }
+            .meniu-copil li:hover{ background-color: darkred;}
+            .element-copil{ display: flex; flex-wrap: wrap; flex-direction: column;}
+            .meniu-copil:hover li.element-copil{ display: block; background-color: red;}
+                .meniu-nepot{ background-color: rgb(0, 17, 255); padding: 0;}
+                .meniu-nepot li{background-color: yellow;}
+
 main{background-color: rgb(9, 255, 0); padding: 20px;} 
     .content{background-color: blue;}
 aside{background-color: yellow; padding: 20px;}
