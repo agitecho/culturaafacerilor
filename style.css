@@ -1,10 +1,8 @@
 html {
-  /* background-color: red; !suprapune propietatile body*/
   margin: 0;
   padding: 0;
 }
 
-/*head{} !nu se afiseaza nu necesita propietati */
 body {
   background-color: #f504ad !important;
   margin: 0;
@@ -30,6 +28,15 @@ header {
 .header {
   background-color: salmon;
   padding: 20px;
+  display: block;
+}
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header-left {
@@ -44,7 +51,7 @@ header {
 }
 
 .header-img {
-  width: 250px;
+  width: 20vh;
 }
 
 .header-center {
@@ -58,7 +65,7 @@ header {
 
 .header-right {
   background-color: blue;
-  /* float: right; */
+  /* float: right;*/
   /* display:block; */
 }
 

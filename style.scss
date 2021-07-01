@@ -1,19 +1,16 @@
 $mobile:400px;
 $tableta:1024px;
 
-
-html{/* background-color: red; !suprapune propietatile body*/
-        margin: 0; padding: 0;}
-/*head{} !nu se afiseaza nu necesita propietati */
-body{background-color: rgb(245, 4, 173) !important; margin:0; display:block;  align-content: center;/* position:absolute; */
-        font-size: 12px;
+html{ margin: 0; padding: 0;}
+body{background-color: rgb(245, 4, 173) !important; margin:0; display:block;  align-content: center; /* position:absolute; */  font-size: 12px;
     }
 header{ 
     background-color:green; 
     display: contents;
      @media screen and (max-width:$mobile) { display: grid; }
     }
-    .header{background-color: salmon; padding: 20px;}
+.header{background-color: salmon; padding: 20px; display: block;}
+    .header-top{ display: flex; flex-wrap: wrap;}
     .header-left{
                 background-color: red; 
                 /* float: left; */
@@ -21,7 +18,7 @@ header{
                 /* max-width: max-content; */
             }
         .titlu-left{color: white;}
-        .header-img{ width: 250px;}
+        .header-img{ width: 20vh;}
     .header-center{
                 /* background-color: yellow; */
                 /* display: inline-block; */
@@ -29,7 +26,7 @@ header{
         .titlu-center{color: rgba(153, 9, 9, 0.603);}
     .header-right{
                  background-color: blue;
-                /* float: right; */
+                /* float: right;*/
                 /* display:block; */
                 }
         .titlu-right{color: white;}
