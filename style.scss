@@ -14,22 +14,26 @@ header{
     .header-left{
                 background-color: red; 
                 /* float: left; */
-                /* display: inline-block; */
                 /* max-width: max-content; */
+                width: 20%;
+                display: block;
             }
-        .titlu-left{color: white;}
-        .header-img{ width: 20vh;}
-    .header-center{
-                /* background-color: yellow; */
-                /* display: inline-block; */
+    .titlu-left{color: white;}
+    .header-img{ width: 20vh;}
+        .header-center{
+                 width: 60%;
+                 display: block;
+                 background-color: yellow;
                 }
         .titlu-center{color: rgba(153, 9, 9, 0.603);}
     .header-right{
                  background-color: blue;
+                 width: 20%;
+                 display:block;
                 /* float: right;*/
-                /* display:block; */
                 }
-        .titlu-right{color: white;}
+    .titlu-right{color: white;}
+
 nav{background-color: green; padding: 20px; display: block;}
     .navigatiemeniu{background-color: rgb(255, 196, 0); display: block;}
         .meniu{ list-style-type: none; background-color: magenta; display: flex; flex-wrap: wrap; flex-direction: row; font-size: 1.2rem;}

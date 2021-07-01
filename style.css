@@ -42,8 +42,9 @@ header {
 .header-left {
   background-color: red;
   /* float: left; */
-  /* display: inline-block; */
   /* max-width: max-content; */
+  width: 20%;
+  display: block;
 }
 
 .titlu-left {
@@ -55,8 +56,9 @@ header {
 }
 
 .header-center {
-  /* background-color: yellow; */
-  /* display: inline-block; */
+  width: 60%;
+  display: block;
+  background-color: yellow;
 }
 
 .titlu-center {
@@ -65,8 +67,9 @@ header {
 
 .header-right {
   background-color: blue;
+  width: 20%;
+  display: block;
   /* float: right;*/
-  /* display:block; */
 }
 
 .titlu-right {
